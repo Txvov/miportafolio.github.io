@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Horas</title>
+    
+</head>
+<style>
+    .volver {
+    background-color: rgb(236, 236, 13);
+    color: #000000;
+    padding: 10px 10px;
+    font-size: 20px;
+    border: none;    
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+</style>
+<body>
+    <h2>Convertidor de Horas a Minutos y Segundos</h2>
+    <p>Ingrese la cantidad de horas:</p>
+    <input type="number" id="horas" placeholder="Horas" min="0">
+    <br>
+    <button onclick="convertirTiempo()">Convertir</button>
+    <p id="resultado"></p>
+<br>
+    <h1>Modificación de Imagenes</h1>
+<img src="img/Mejorar-imagen.png" alt="" width="700px" height="400px">
+<a class="volver" href="index.html">Volver</a>
+    <script>
+    
+    function convertirTiempo() {
+        let horas = parseFloat(document.getElementById("horas").value);
+    
+        if (isNaN(horas) || horas < 0) {
+            document.getElementById("resultado").innerText = "Por favor, ingrese un número válido de horas.";
+            return;
+        }
+    
+        let minutos = horas * 60;
+        let segundos = horas * 3600;
+    
+        document.getElementById("resultado").innerText = 
+            `${horas} horas equivalen a ${minutos} minutos o ${segundos} segundos.`;
+    }</script>
+</body>
+</html>
