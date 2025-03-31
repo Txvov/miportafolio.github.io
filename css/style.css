@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: beige;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    border: 2px solid black;
+    padding: 0;
+    background-color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  background-color: rgb(0, 183, 255);
+  color: white;
+}
+
+nav .botones {
+    background-color: rgb(255, 240, 207);
+    color: #000000;
+    padding: 10px 10px;
+    font-size: 15px;
+    border:none;    
+    border-radius: 20px;
+    cursor: pointer;
+}
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+.hero {
+    text-align: center;
+    padding: 40px 10px;
+    border-bottom: 2px solid black;
+}
+.hero h1 {
+    font-size: 40px;
+    margin: 0;
+}
+.hero p {
+    color: gray;
+    font-size: 14px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    gap: 0;
+    border-bottom: 2px solid black;
+}
+.box {
+    border-right: 2px solid black;
+    padding: 20px 16px 0px 0px;
+    min-height: 300px;
+}
+.box .habilidad  {
+ padding: 0px 0px 0px 10px ;
+ 
+}
+
+.box a.dos {
+    padding: 50px;
+}
+
+.box .division {
+    padding: 10px 0px 10px 15px;
+    border-bottom: 2px solid black;
+    width:100%;
+}
+.box:last-child {
+    border-right: none;
+}
+
+.box .tet{
+padding: 10px -10px 0px 0px;
+}
+.box h3, p {
+    padding: 10px 10px 10px 50px;
+    margin-top: 0;
+}
+
+.box .varios {
+    list-style: none;
+    list-style-type:' - ' ;
+}
+
+.box .tres {
+    padding: 10px 10px 10px 20px;
+}
+.box .edu{
+    padding: 10px 10px 10px 20px;
+    margin-top: 0;
+}
+.box h4 {
+    padding: 10px 10px 10px 20px;
+    margin-top: 0;
+}
+.projects li {
+    list-style: none;
+    border-bottom: 2px solid black;
+    padding: 10px 0px 10px 15px;
+    margin-bottom: 5px;
+    width: auto;
+}
+.reviews {
+    padding: 15px;
+}
+.reviews h3 {
+    text-align: left;
+    margin: 20px 0px 20px 40px;
+}
+.review-boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review p{
+    padding: 10px 0px 10px 30px;
+}
+.review {
+    width: 28%;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius:30px;
+    text-align: left;
+}
+footer {
+    text-align: center;
+    padding: 90px 0px 100px 20px;
+}
